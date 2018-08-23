@@ -294,8 +294,6 @@ ecryptfs_create(struct inode *directory_inode, struct dentry *ecryptfs_dentry,
 		goto out;
 	}
 
-	unlock_new_inode(ecryptfs_inode);
-
 	crypt_stat = &ecryptfs_inode_to_private(ecryptfs_inode)->crypt_stat;
 	if (get_events() && get_events()->open_cb)
 			get_events()->open_cb(
@@ -303,7 +301,6 @@ ecryptfs_create(struct inode *directory_inode, struct dentry *ecryptfs_dentry,
 					crypt_stat);
 
 	d_instantiate_new(ecryptfs_dentry, ecryptfs_inode);
-
 out:
 	return rc;
 }
