@@ -785,8 +785,6 @@ CONFIG_TASKSTATS=y
 CONFIG_TASK_DELAY_ACCT=y
 CONFIG_TASK_XACCT=y
 CONFIG_TASK_IO_ACCOUNTING=y
-<<<<<<< HEAD:arch/arm64/configs/rolex_defconfig
-=======
 
 #TCP
 #
@@ -820,4 +818,3 @@ CONFIG_ARM_SMMU=y
 CONFIG_IOMMU_DEBUG=y
 CONFIG_IOMMU_TESTS=y
 CONFIG_STATE_NOTIFIER=y
->>>>>>> e12279e... Added State_notifier:arch/arm64/configs/riva_defconfig
